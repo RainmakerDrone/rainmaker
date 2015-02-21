@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'twilio#voice'
+  root 'twilio#index'
   post 'twilio/voice' => 'twilio#voice'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

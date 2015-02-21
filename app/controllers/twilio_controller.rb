@@ -7,6 +7,9 @@ class TwilioController < ApplicationController
  
   skip_before_action :verify_authenticity_token
  
+  def index
+  end
+
   def voice
     response = Twilio::TwiML::Response.new do |r|
       r.Say 'Sup Fools. Cash Money Drone team is for real.', :voice => 'alice'
