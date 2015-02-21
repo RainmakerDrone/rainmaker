@@ -1,7 +1,6 @@
-require 'twilio-ruby'
- 
 class TwilioController < ApplicationController
   include Webhookable
+  require 'twilio-ruby'
  
   after_filter :set_header
  
@@ -24,7 +23,7 @@ class TwilioController < ApplicationController
     message_body = params["Body"]
     from_number = params["From"]
  
-    SMSLogger.log_text_message from_number, message_body
+    @vote = new
 
     response = "Thanks for your vote! Vote again and get $$$$$"
     render_twiml response
