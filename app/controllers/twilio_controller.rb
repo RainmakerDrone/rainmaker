@@ -25,10 +25,7 @@ class TwilioController < ApplicationController
  
     @vote = Vote.new(:name => from_number, :description => message_body)
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @vote }
-    end
+    response = "Thanks for your vote! Vote again and get $$$$$"
+    render_twiml response
   end
-  
 end
