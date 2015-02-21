@@ -24,5 +24,9 @@ class TwilioController < ApplicationController
     message_body = params["Body"]
     from_number = params["From"]
  
+    SMSLogger.log_text_message from_number, message_body
+
+    response = "Thanks for your vote! Vote again and get $$$$$"
+    render_twiml response
   end
 end
