@@ -8,8 +8,8 @@
 
 <% @votes.each do |vote| %>
   <tr>
-    <td><%=h vote.name %></td>
-    <td><%=h vote.description %></td>
+    <td><%= vote.name %></td>
+    <td><%= vote.description %></td>
   </tr>
 <% end %>
 </table>
