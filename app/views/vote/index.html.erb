@@ -1,0 +1,17 @@
+<h1>Listing votes</h1>
+
+<table>
+  <tr>
+    <th>Number</th>
+    <th>Vote</th>
+  </tr>
+
+<% @votes.each do |vote| %>
+  <tr>
+    <td><%=h vote.name %></td>
+    <td><%=h vote.description %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
