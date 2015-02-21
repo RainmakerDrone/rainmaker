@@ -7,8 +7,6 @@ class TwilioController < ApplicationController
  
   skip_before_action :verify_authenticity_token
  
-  def index
-  end
 
   def voice
     response = Twilio::TwiML::Response.new do |r|
@@ -26,6 +24,6 @@ class TwilioController < ApplicationController
     message_body = params["Body"]
     from_number = params["From"]
  
-    SMSLogger.log_text_message from_number, message_body
+    Twilio::TwiML::SMSLogger.log_text_message from_number, message_body
   end
 end

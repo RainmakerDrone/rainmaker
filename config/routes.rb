@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'twilio#index'
+  root 'static#index'
   post 'twilio/voice' => 'twilio#voice'
   post 'twilio/text' => 'twilio#text'
   # The priority is based upon order of creation: first created -> highest priority.
