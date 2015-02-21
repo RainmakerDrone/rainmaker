@@ -24,6 +24,6 @@ class TwilioController < ApplicationController
     message_body = params["Body"]
     from_number = params["From"]
  
-    Twilio::TwiML::SMSLogger.log_text_message from_number, message_body
+    SMSLogger.log_text_message from_number, message_body
   end
 end
