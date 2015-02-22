@@ -5,7 +5,7 @@ class VotesController < ApplicationController
     end
 
 	def index
-		@votes = Vote.all.order('created_at ASC')
+		@votes = Vote.all.order('created_at DESC')
 	end
 
 	def new
