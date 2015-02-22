@@ -25,7 +25,7 @@ class TwilioController < ApplicationController
  
     @vote = Vote.new(:name => from_number, :description => message_body)
 
-    if (@vote.name == "l") or (@vote.name == "r") or (@vote.name == "b") or (@vote.name == "f")
+    if @vote.name.downcase == "l" or @vote.name.downcase == "r" or @vote.name.downcase == "b" or @vote.name.downcase == "f"
       @vote.save
     end
 
