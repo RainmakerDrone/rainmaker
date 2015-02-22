@@ -1,38 +1,43 @@
+<body style="background-color:#F68E5C;">
+
 <center>
-  <h1>Sway Dashboard</h1>
-  <h2>+1 (424) 332-5166</h2>
+  <h1 id="title1">+1 (424) 332-5166</h1>
 </center>
 
-<div class="row">
-  <div class="col-md-12 col-sm-12">
+<div class="row" style="background-color:#8FD5E1;">
+  <div class="col-md-6 col-sm-12">
   <center>
-    <h3>Latest Texts</h3>
-
     <table>
       <tr>
-        <th style="padding:15px;">Time</th>
-        <th style="padding:15px;">Phone Number</th>
-        <th style="padding:15px;">Vote</th>
+        <th style="padding:1.7em;">Time</th>
+        <th style="padding:1.7em;">Phone Number</th>
+        <th style="padding:1.7em;">Vote</th>
       </tr>
 
       <% @votes.each do |vote| %>
         <tr>
           <!--<td><%= time_ago_in_words(vote.created_at) %></td>-->
-          <td style="padding:15px;"><%= distance_of_time_in_words(vote.created_at, Time.now, include_seconds: true) %></td>
-          <td style="padding:15px;"><%= vote.name %></td>
-          <td style="padding:15px;"><%= vote.description.upcase %></td>
+          <td style="padding:1.7em;padding-bottom:1.1em;"><%= distance_of_time_in_words(vote.created_at, Time.now, include_seconds: true) %></td>
+          <td style="padding:1.7em;padding-bottom:1.1em;"><%= vote.name %></td>
+          <td style="padding:1.7em;padding-bottom:1.1em;"><%= vote.description.upcase %></td>
         </tr>
       <% end %>
     </table>
-    </center>
-    <br />
+  </center>
+  </div>
+
+   <div class="col-md-6 col-sm-12">
+   <%= image_tag("drone.png", :class => "center", :id => "drone", :style => "width:85%;") %>
+   </div>
+  <br />
 
   </div>
 </div>
+</body>
 
 
 <script>
 setTimeout(function() {
-  //window.location.reload();
+  window.location.reload();
 },1000)
 </script>
