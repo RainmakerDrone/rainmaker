@@ -1,9 +1,5 @@
 class VotesController < ApplicationController
 
-    def show
-      @vote = Vote.find(params[:id])
-    end
-
 	def index
 		@votes = Vote.all.order('created_at DESC').limit(20)
 	end

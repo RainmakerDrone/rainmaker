@@ -6,10 +6,11 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :votes, :only => [:new, :create, :index]
   root 'static_pages#landing'
   post 'twilio/voice' => 'twilio#voice'
   post 'twilio/text' => 'twilio#text'
-  get 'votes/index' => 'votes#index'
+  match '/demo',  to: 'votes#index',   via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
