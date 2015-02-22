@@ -1,6 +1,6 @@
 module Api
     module V1
-        class VoteController < ApplicationController
+        class VotesController < ApplicationController
             respond_to :json
 
             def index
