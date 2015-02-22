@@ -2,10 +2,6 @@ class VoteController < ApplicationController
 
     def show
       @vote = Vote.find(params[:id])
-      respond_to do |format|
-        format.html
-        format.js
-      end
     end
 
 	def index

@@ -24,7 +24,10 @@ class TwilioController < ApplicationController
     from_number = params["From"]
  
     @vote = Vote.new(:name => from_number, :description => message_body)
-    @vote.save
+
+    if (@vote.name == "l") or (@vote.name == "r") or (@vote.name == "b") or (@vote.name == "f")
+      @vote.save
+    end
 
     #response = 'Thanks for your vote! Vote again and get $$$$$'
     #render_twiml response
