@@ -5,7 +5,7 @@ class VotesController < ApplicationController
     end
 
 	def index
-		@votes = Vote.all.order('created_at DESC')
+		@votes = Vote.all.order('created_at DESC').limit(20)
 	end
 
 	def new
