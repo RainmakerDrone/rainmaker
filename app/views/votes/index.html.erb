@@ -1,19 +1,31 @@
-<h1>Listing votes</h1>
+<center>
+  <h1>Sway Dashboard</h1>
+</center>
 
-<table>
-  <tr>
-    <th>Time</th>
-    <th>Phone Number</th>
-    <th>Vote</th>
-  </tr>
+<div class="row">
+  <div class="col-md-6 col-sm-12">
+  <center>
+    <h1>Listing votes</h1>
 
-<% @votes.each do |vote| %>
-  <tr>
-    <td><%= time_ago_in_words(vote.created_at) %></td>
-    <td><%= vote.name %></td>
-    <td><%= vote.description.upcase %></td>
-  </tr>
-<% end %>
-</table>
+    <table>
+      <tr>
+        <th>Time</th>
+        <th>Phone Number</th>
+        <th>Vote</th>
+      </tr>
 
-<br />
+      <% @votes.each do |vote| %>
+        <tr>
+          <td><%= time_ago_in_words(vote.created_at) %></td>
+          <td><%= vote.name %></td>
+          <td><%= vote.description.upcase %></td>
+        </tr>
+      <% end %>
+    </table>
+    </center>
+    <br />
+
+  </div>
+  <div class="col-md-6 col-sm-12">
+  </div>
+</div>
