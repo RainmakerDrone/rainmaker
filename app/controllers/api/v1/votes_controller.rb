@@ -4,7 +4,7 @@ module Api
             respond_to :json
 
             def index
-                    respond_with Vote.where(created_at: Time.now..(Time.now-5.seconds)).as_json
+                    respond_with Vote.where(created_at: (Time.now-5.seconds)..(Time.now)).as_json
             end
 
         end
