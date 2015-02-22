@@ -9,7 +9,7 @@
 <% @votes.each do |vote| %>
   <tr>
     <td><%= vote.name %></td>
-    <td><%= vote.description %></td>
+    <td><%= vote.description.uppercase %></td>
   </tr>
 <% end %>
 </table>
