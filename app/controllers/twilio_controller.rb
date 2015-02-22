@@ -20,12 +20,12 @@ class TwilioController < ApplicationController
     # let's pretend that we've mapped this action to 
     # http://localhost:3000/sms in the routes.rb file
     
-    message_body = params["Body"]
+    message_body = params["Body"].downcase
     from_number = params["From"]
  
-    @vote = Vote.new(:name => from_number, :description => message_body.downcase!)
+    @vote = Vote.new(:name => from_number, :description => message_body)
 
-    if @vote.description.to_s == "l" or @vote.description.to_s == "r" or @vote.description.to_s == "b" or @vote.description.to_s == "f"
+    if message_body == 'l' or message_body == 'r' or message_body == "b") or message_body == "f")
       @vote.save
     end
 
