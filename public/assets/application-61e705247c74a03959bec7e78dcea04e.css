@@ -370,8 +370,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("/assets/bootstrap/glyphicons-halflings-regular-31f60a4c3845343d551def3adc602a10.eot");
-  src: url("/assets/bootstrap/glyphicons-halflings-regular-31f60a4c3845343d551def3adc602a10.eot?#iefix") format("embedded-opentype"), url("/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2") format("woff2"), url("/assets/bootstrap/glyphicons-halflings-regular-4c18eb6f51df3274f7d02dcd79043b73.woff") format("woff"), url("/assets/bootstrap/glyphicons-halflings-regular-b491e790954a68a98fde7e4977dca71f.ttf") format("truetype"), url("/assets/bootstrap/glyphicons-halflings-regular-71e812deb5287605b01eb3549744d0cc.svg#glyphicons_halflingsregular") format("svg");
+  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 /* line 22, /Users/brownrout/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.3/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -8539,46 +8539,53 @@ button.close {
     display: none !important;
   }
 }
-/* mixins, variables, etc. */
-/* universal */
-/* line 10, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
-body {
-  padding-top: 60px;
+/* line 5, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
+html {
+  overflow-y: scroll;
 }
 
+/* mixins, variables, etc. */
+/* universal */
 /* line 14, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
+body {
+  padding-top: 60px;
+  background-color: #8FD5E1 !important;
+  color: #fff !important;
+}
+
+/* line 20, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
 section {
   overflow: auto;
 }
 
-/* line 18, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
+/* line 24, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 22, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
+/* line 28, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
 .center {
   text-align: center;
 }
-/* line 24, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
+/* line 30, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
 .center h1 {
   margin-bottom: 10px;
 }
 
 /* typography */
-/* line 31, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
+/* line 37, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
-/* line 35, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
+/* line 41, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
 }
 
-/* line 41, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
+/* line 47, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
@@ -8588,7 +8595,7 @@ h2 {
   color: #777777;
 }
 
-/* line 50, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
+/* line 56, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
 p {
   font-size: 1.1em;
   line-height: 1.7em;
@@ -8596,34 +8603,43 @@ p {
 
 /* header */
 /* footer */
-/* line 61, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
+/* line 67, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
 footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777777;
 }
-/* line 66, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
+/* line 72, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
 footer a {
   color: #555555;
 }
-/* line 68, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
+/* line 74, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
 footer a:hover {
   color: #222222;
 }
-/* line 72, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
+/* line 78, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
 footer small {
   float: left;
 }
-/* line 75, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
+/* line 81, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
 footer ul {
   float: right;
   list-style: none;
 }
-/* line 78, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
+/* line 84, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+
+/* line 94, /Users/brownrout/Documents/drone$/drone$/app/assets/stylesheets/custom.css.scss */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: auto;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -8640,5 +8656,3 @@ footer ul li {
 
 
  */
-
-
