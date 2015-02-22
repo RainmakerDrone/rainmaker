@@ -1,4 +1,4 @@
-class VoteController < ApplicationController
+class VotesController < ApplicationController
 
     def show
       @vote = Vote.find(params[:id])

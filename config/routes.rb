@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     end
   end
 
-  root 'vote#index'
+  root 'votes#index'
   post 'twilio/voice' => 'twilio#voice'
   post 'twilio/text' => 'twilio#text'
   # The priority is based upon order of creation: first created -> highest priority.
