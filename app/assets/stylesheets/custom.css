@@ -1,14 +1,18 @@
-@import "bootstrap-sprockets";
 @import "bootstrap";
+
+html {
+  overflow-y: scroll;
+}
 
 /* mixins, variables, etc. */
 
-$gray-medium-light: #eaeaea;
 
 /* universal */
 
 body {
   padding-top: 60px;
+  background-color: #8FD5E1 !important;
+  color: #fff !important;
 }
 
 section {

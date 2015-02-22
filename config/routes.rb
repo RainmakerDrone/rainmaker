@@ -6,9 +6,10 @@ Rails.application.routes.draw do
     end
   end
 
-  root 'votes#index'
+  root 'static_pages#landing'
   post 'twilio/voice' => 'twilio#voice'
   post 'twilio/text' => 'twilio#text'
+  get 'votes/index' => 'votes#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

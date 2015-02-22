@@ -1,6 +1,6 @@
-class Static_Pages_Controller < ApplicationController
+class StaticPagesController < ApplicationController
 
-	def index
+	def landing
  	end
 
 end
