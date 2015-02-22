@@ -1,5 +1,9 @@
 == Rainmaker Web API and Landing Page
 
-This Ruby on Rails app hosts our landing page as well as our web interface between our crowdsourced SMS controls and our Rainmaker Desktop Software. 
-Using Twilio, we are able to allow audiences to text in control orders to our drone.
-After the onboard timer finishes, the Rainmaker drops cash from its claw onto the people below.
+Ruby on Rails app which hosts our landing page as well as our web interface between our crowdsourced SMS controls and our Rainmaker Desktop Software. 
+Using Twilio, we are able to allow audiences to text in directions to our drone.
+When the onboard timer runs out, the Rainmaker drops cash from its claw onto the winners below.
+
+Inspired by cheerleaders throwing t-shirts to the rowdiest fans, we see the Rainmaker drone having potential applications at sports games, music festivals, assemblies, and more.
+
+In future hacks we hope to make the Rainmaker responsive to both audio and video, allowing it to respond to the most spirited fans.
