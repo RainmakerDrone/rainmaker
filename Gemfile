@@ -14,6 +14,7 @@ gem 'twilio-ruby'
 gem 'responders'
 gem 'bootstrap-sass'
 gem 'twitter-bootstrap-rails'
+gem 'sass-rails', '4.0.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
