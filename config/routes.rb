@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  namespace :api, defaults: {format: 'json'} do
+    namespace :v1 do
+        resources :votes
+    end
+  end
+
   root 'vote#index'
   post 'twilio/voice' => 'twilio#voice'
   post 'twilio/text' => 'twilio#text'
