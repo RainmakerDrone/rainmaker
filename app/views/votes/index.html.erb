@@ -4,22 +4,23 @@
 </center>
 
 <div class="row">
-  <div class="col-md-6 col-sm-12">
+  <div class="col-md-12 col-sm-12">
   <center>
-    <h1>Recent Maneuvers</h1>
+    <h3>Latest Texts</h3>
 
     <table>
       <tr>
-        <th>Time</th>
-        <th>Phone Number</th>
-        <th>Vote</th>
+        <th style="padding:15px;">Time</th>
+        <th style="padding:15px;">Phone Number</th>
+        <th style="padding:15px;">Vote</th>
       </tr>
 
       <% @votes.each do |vote| %>
         <tr>
-          <td><%= time_ago_in_words(vote.created_at) %></td>
-          <td><%= vote.name %></td>
-          <td><%= vote.description.upcase %></td>
+          <!--<td><%= time_ago_in_words(vote.created_at) %></td>-->
+          <td style="padding:15px;"><%= distance_of_time_in_words(vote.created_at, Time.now, include_seconds: true) %></td>
+          <td style="padding:15px;"><%= vote.name %></td>
+          <td style="padding:15px;"><%= vote.description.upcase %></td>
         </tr>
       <% end %>
     </table>
@@ -27,13 +28,11 @@
     <br />
 
   </div>
-  <div class="col-md-6 col-sm-12">
-  </div>
 </div>
 
 
 <script>
 setTimeout(function() {
-  window.location.reload();
+  //window.location.reload();
 },1000)
 </script>
