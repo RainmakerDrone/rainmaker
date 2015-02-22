@@ -2,14 +2,14 @@
 
 <table>
   <tr>
-    <th>Timestamp</th>
+    <th>Time</th>
     <th>Phone Number</th>
     <th>Vote</th>
   </tr>
 
 <% @votes.each do |vote| %>
   <tr>
-    <td><%= vote.created_at %></td>
+    <td><%= time_ago_in_words(vote.created_at) %></td>
     <td><%= vote.name %></td>
     <td><%= vote.description.upcase %></td>
   </tr>
