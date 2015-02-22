@@ -152,9 +152,9 @@ footer {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
-    color: #f8f8f8;
-    background: url('https://dronewarsuk.files.wordpress.com/2010/06/predator-firing-missile4.jpg') no-repeat center center;
+    /**background: url('https://dronewarsuk.files.wordpress.com/2010/06/predator-firing-missile4.jpg') no-repeat center center;**/
     background-size: cover;
+    font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
 .intro-message {
@@ -212,7 +212,7 @@ footer {
 
 .content-section-a {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #F68E5C;
 }
 
 .content-section-b {
